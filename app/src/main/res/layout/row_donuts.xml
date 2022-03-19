@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F4DDDD"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="10dp"
+    android:id="@+id/layout_item"
+    >
+
+    <ImageView
+        android:id="@+id/imgView_main"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="Tasty Donut"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imgView_main"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:text="Spicy tasty donut family"
+        app:layout_constraintStart_toStartOf="@+id/textView_Header"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Header" />
+
+    <TextView
+        android:id="@+id/textView_Price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_des"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:text="$10.00"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_des"
+        app:layout_constraintTop_toBottomOf="@+id/textView_des" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
